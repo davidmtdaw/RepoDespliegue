@@ -8,3 +8,4 @@
 | 4 | Levanta, prueba portada/alta/`/salud`, verifica persistencia y borra volúmenes | Di los comandos y verifiqué la salida | Confirmé `notas:2` tras `restart`, volumen eliminado con `down -v` y `notas:0` tras redisplegar |
 | 5 | Informe de problemas del Dockerfile y compose de `sin-revisar` | Listó los problemas y los verifiqué con `docker build`, `inspect`, `history` y `config` | Detecté un punto exagerado (el `REDIS_URL` sí está definido) y lo documenté en `auditoria.md` |
 | 6 | Comprueba usuario, `.env`/`.git` fuera de la imagen, healthy y capas más pesadas | Di los comandos y verifiqué | Confirmé `appuser`, ausencia de `.env`/`.git`, estado `healthy` y capas base como las más pesadas |
+| 7 | Escribe README.md (requisitos, variables, puesta en marcha, pruebas, datos, logs, limpieza) | Generó el README | Verifiqué el redespliegue reproducible tras `down -v` + `image rm` |
